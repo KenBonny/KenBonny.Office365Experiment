@@ -1,0 +1,10 @@
+C:\Users\kenbo\RiderProjects\KenBonny.Office365Access\KenBonny.Office365Access.Console\bin\Debug\netcoreapp2.0\KenBonny.Office365Access.Console.deps.json
+C:\Users\kenbo\RiderProjects\KenBonny.Office365Access\KenBonny.Office365Access.Console\bin\Debug\netcoreapp2.0\KenBonny.Office365Access.Console.runtimeconfig.json
+C:\Users\kenbo\RiderProjects\KenBonny.Office365Access\KenBonny.Office365Access.Console\bin\Debug\netcoreapp2.0\KenBonny.Office365Access.Console.runtimeconfig.dev.json
+C:\Users\kenbo\RiderProjects\KenBonny.Office365Access\KenBonny.Office365Access.Console\bin\Debug\netcoreapp2.0\KenBonny.Office365Access.Console.dll
+C:\Users\kenbo\RiderProjects\KenBonny.Office365Access\KenBonny.Office365Access.Console\bin\Debug\netcoreapp2.0\KenBonny.Office365Access.Console.pdb
+C:\Users\kenbo\RiderProjects\KenBonny.Office365Access\KenBonny.Office365Access.Console\obj\Debug\netcoreapp2.0\KenBonny.Office365Access.Console.csproj.CoreCompileInputs.cache
+C:\Users\kenbo\RiderProjects\KenBonny.Office365Access\KenBonny.Office365Access.Console\obj\Debug\netcoreapp2.0\KenBonny.Office365Access.Console.AssemblyInfoInputs.cache
+C:\Users\kenbo\RiderProjects\KenBonny.Office365Access\KenBonny.Office365Access.Console\obj\Debug\netcoreapp2.0\KenBonny.Office365Access.Console.AssemblyInfo.cs
+C:\Users\kenbo\RiderProjects\KenBonny.Office365Access\KenBonny.Office365Access.Console\obj\Debug\netcoreapp2.0\KenBonny.Office365Access.Console.dll
+C:\Users\kenbo\RiderProjects\KenBonny.Office365Access\KenBonny.Office365Access.Console\obj\Debug\netcoreapp2.0\KenBonny.Office365Access.Console.pdb
