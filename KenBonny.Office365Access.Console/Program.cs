@@ -24,8 +24,8 @@ namespace KenBonny.Office365Access.Console
                 var emails = GetEmails(clientId, clientSecret);
                 foreach (var email in emails)
                 {
-                    var isReadPlaceholder = email.IsRead ? string.Empty : "*";
-                    System.Console.WriteLine($" - {email.Subject} {isReadPlaceholder} ({email.From.EmailAddress.Name})");
+                    var isUnreadPlaceholder = email.IsRead ? string.Empty : "*";
+                    System.Console.WriteLine($" - {email.Subject} {isUnreadPlaceholder} ({email.From.EmailAddress.Name})");
                 }
             }
             catch (Exception exception)
@@ -36,7 +36,7 @@ namespace KenBonny.Office365Access.Console
 
         private static IReadOnlyCollection<Email> GetEmails(string clientId, string clientSecret)
         {
-            var officeClient = new RestClient("https://graph.microsoft.com/v1.0/me")
+            var officeClient = new RestClient("https://graph.microsoft.com/v2.0/me")
             {
                 Authenticator = new Office365Authenticator(clientId, clientSecret)
             };
