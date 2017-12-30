@@ -36,7 +36,7 @@ namespace KenBonny.Office365Access.Console
 
         private static IReadOnlyCollection<Email> GetEmails(string clientId, string clientSecret)
         {
-            var officeClient = new RestClient("https://graph.microsoft.com/v2.0/me")
+            var officeClient = new RestClient("https://graph.microsoft.com/v1.0/me")
             {
                 Authenticator = new Office365Authenticator(clientId, clientSecret)
             };
