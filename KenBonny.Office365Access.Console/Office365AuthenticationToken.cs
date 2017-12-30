@@ -5,6 +5,12 @@ namespace KenBonny.Office365Access.Console
 {
     internal class Office365AuthenticationToken
     {
+        private DateTime _createdDate;
+
+        public Office365AuthenticationToken()
+        {
+            _createdDate = DateTime.Now;
+        }
 
         [JsonProperty("access_token")]
         public string AccessToken { get; set; }
@@ -36,7 +42,7 @@ namespace KenBonny.Office365Access.Console
             }
             else if (ExpiresIn > 0)
             {
-                expireDate = DateTime.Now.AddSeconds(ExpiresIn);
+                expireDate = _createdDate.AddSeconds(ExpiresIn);
             }
             return expireDate;
         }
