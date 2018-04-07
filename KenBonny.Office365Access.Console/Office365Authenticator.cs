@@ -1,4 +1,5 @@
-﻿using RestSharp;
+﻿using System.Security.Authentication;
+using RestSharp;
 using RestSharp.Authenticators;
 
 namespace KenBonny.Office365Access.Console
@@ -35,7 +36,16 @@ namespace KenBonny.Office365Access.Console
             }
             else
             {
-                throw response.ErrorException;
+                if (response.ErrorException != null)
+                    throw response.ErrorException;
+                
+                if (!string.IsNullOrWhiteSpace(response.ErrorMessage))
+                    throw new AuthenticationException(response.ErrorMessage);
+                
+                if (!string.IsNullOrWhiteSpace(response.Content))
+                    throw new AuthenticationException(response.Content);
+                
+                throw new AuthenticationException("Could not authenticate");
             }
         }
 
